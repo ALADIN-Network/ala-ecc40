@@ -1,5 +1,5 @@
-[![NPM](https://img.shields.io/npm/v/alaexplorerjs-ecc-v4.0.4.svg)](https://www.npmjs.org/package/alaexplorerjs-ecc-v4.0.4)
-[![Build Status](https://travis-ci.org/ALAIO/alaexplorerjs-ecc-v4.0.4.svg?branch=master)](https://travis-ci.org/ALAIO/alaexplorerjs-ecc-v4.0.4)
+[![NPM](https://img.shields.io/npm/v/ala-ecc4.svg)](https://www.npmjs.org/package/ala-ecc4)
+[![Build Status](https://travis-ci.org/ALAIO/ala-ecc4.svg?branch=master)](https://travis-ci.org/ALAIO/ala-ecc4)
 
 # Elliptic curve cryptography functions (ECC)
 
@@ -8,26 +8,26 @@ Private Key, Public Key, Signature, AES, Encryption / Decryption
 # Import
 
 ```js
-import ecc from 'alaexplorerjs-ecc-v4.0.4'
+import ecc from 'ala-ecc4'
 // or
-const ecc = require('alaexplorerjs-ecc-v4.0.4')
+const ecc = require('ala-ecc4')
 ```
 
 # Include
 
--   Install with: `npm install alaexplorerjs-ecc-v4.0.4`
--   Html script tag, see [releases](https://github.com/ALADIN-Network/alaexplorerjs-ecc-v4.0.4/releases) for the correct **version** and its matching script **integrity** hash.
+-   Install with: `npm install ala-ecc4`
+-   Html script tag, see [releases](https://github.com/ALADIN-Network/ala-ecc4/releases) for the correct **version** and its matching script **integrity** hash.
 
 ```html
 <html>
 <head>
   <meta charset="utf-8">
   <!--
-  sha512-cL+IQQaQ586s9DrXfGtDheRpj5iDKh2M+xlpfwbhNjRIp4BGQ1fkM/vB4Ta8mc+f51YBW9sJiPcyMDIreJe6gQ== lib/alaexplorerjs-ecc-v4.0.4.js
-  sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ== lib/alaexplorerjs-ecc-v4.0.4.min.js
-  sha512-eq1SCoSe38uR1UVuQMwR73VgY8qKTBDc87n2nIiC5WLhn1o2y1U6c5wY8lrigVX7INM8fM0PxDlMX5WvpghKig== lib/alaexplorerjs-ecc-v4.0.4.min.js.map
+  sha512-cL+IQQaQ586s9DrXfGtDheRpj5iDKh2M+xlpfwbhNjRIp4BGQ1fkM/vB4Ta8mc+f51YBW9sJiPcyMDIreJe6gQ== lib/ala-ecc4.js
+  sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ== lib/ala-ecc4.min.js
+  sha512-eq1SCoSe38uR1UVuQMwR73VgY8qKTBDc87n2nIiC5WLhn1o2y1U6c5wY8lrigVX7INM8fM0PxDlMX5WvpghKig== lib/ala-ecc4.min.js.map
   -->
-  <script src="https://cdn.jsdelivr.net/npm/alaexplorerjs-ecc-v4.0.4@4.0.4/lib/alaexplorerjs-ecc-v4.0.4.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/ala-ecc4@4.0.4/lib/ala-ecc4.min.js"
     integrity="sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ=="
     crossorigin="anonymous"></script>
 
@@ -289,7 +289,7 @@ Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 # Usage (Object API)
 
 ```js
-let {PrivateKey, PublicKey, Signature, Aes, key_utils, config} = require('alaexplorerjs-ecc-v4.0.4')
+let {PrivateKey, PublicKey, Signature, Aes, key_utils, config} = require('ala-ecc4')
 
 // Create a new random private key
 let privateWif
@@ -309,16 +309,16 @@ pubkey = PrivateKey.fromString(privateWif).toPublic().toString()
 # Browser
 
 ```bash
-git clone https://github.com/ALADIN-Network/alaexplorerjs-ecc-v4.0.4.git
-cd alaexplorerjs-ecc-v4.0.4
+git clone https://github.com/ALADIN-Network/ala-ecc4.git
+cd ala-ecc4
 npm install
 npm run build_browser
-# builds: ./dist/alaexplorerjs-ecc-v4.0.4.js
+# builds: ./dist/ala-ecc4.js
 # Verify release hash
 ```
 
 ```html
-<script src=alaexplorerjs-ecc-v4.0.4.js></script>
+<script src=ala-ecc4.js></script>
 ```
 
 ```js
